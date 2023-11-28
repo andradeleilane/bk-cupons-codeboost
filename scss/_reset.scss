@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    //font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

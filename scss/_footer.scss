@@ -1,0 +1,81 @@
+footer {
+    .main {
+        background-color: var(--brown);
+        padding-top: 4.9rem;
+        padding-bottom: 4.4rem;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            a {
+                color: var(--white);
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: -0.0429rem;
+                transition: color .3s ease;
+                &:hover {
+                    color: var(--yellow);
+                }
+            }
+        }
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 31px;
+            span {
+                color: var(--white);
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: -0.0429rem;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 23px;
+                li {
+                    a {
+                       width: 64px;
+                       height: 64px;
+                       background-color: #5D2A1C;
+                       border-radius: 50%;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       transition: background-color .3s ease;
+                       &:hover {
+                        background-color: var(--orange);
+                    }
+                      
+                  }
+                }
+            }
+        }
+    }
+    .copy {
+        background-color: #5D2A1C;
+        padding: 1.4rem 0;
+        text-align: center;
+        p {
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            letter-spacing: -0.04rem;
+        }
+    }
+}

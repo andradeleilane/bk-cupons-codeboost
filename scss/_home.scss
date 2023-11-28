@@ -1,0 +1,392 @@
+.s-hero {
+   width: 100%;
+   height: 62.3rem;
+   background: linear-gradient(164deg, rgba(239, 225, 218, 0.00) 3.82%, #EFE1DA 90.95%);
+   .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+   }
+   .left {
+    padding-top: 120px;
+    flex: 1;
+    max-width: 527px;
+    h3 {
+        color: var(--yellow);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-transform: uppercase;  
+        margin-bottom: 2.2rem;
+        display: flex;
+        align-items: center;
+        gap: 3.7rem;
+        &::after {
+            content: "";
+            flex: 1;
+            max-width: 29rem;
+            height: 0.2rem;
+            background: url(/images/line.svg) no-repeat center center;
+            display: block;
+        }
+    }
+    .value {
+        position: relative;
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        gap: 3.7rem;
+        &::after {
+            content: "";
+            background: url(../images/arrow-btn.svg) no-repeat center center;
+            width: 4.3rem;
+            height: 3.8rem;
+            position: absolute;
+            right: -6.7rem;
+            top: 3rem;
+        }
+        h2 {
+            color: var(--yellow);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 6.5rem;
+            font-weight: bold;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        span {
+            color: var(--brown);
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 2.3rem; 
+            letter-spacing: -0.0371rem;
+        }
+        button {
+            padding: 22px 52px;
+            background-color: var(--brown);
+            border-radius: 6px;
+            box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.60);
+            color: var(--white);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+    }
+   }
+
+   .right {
+    position: relative;
+    flex: 1;
+    max-width: 52.8rem;
+    height: 66.3rem;
+    background-color: var(--yellow);
+    border-radius: 0rem 0rem 1.2rem 1.2rem;
+    padding-top: 9.5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .image {
+        position: absolute;
+        width: 68.4rem;
+        height: 49.2rem;
+        img {
+            position: absolute;
+            &.refri {
+                left: 0;
+                top: 2.5rem;
+                z-index: 1;
+                animation: fadeLeft 1s forwards;
+            }
+            &.fritas {
+                top: 0;
+                right: 0;
+                z-index: 1;
+                animation: fadeRight 1s forwards;
+            }
+            &.burger {
+                z-index: 2;
+                left: 5.2rem;
+                bottom: 0;
+                animation: fadeUp 1s forwards;
+            }
+            &.logo {
+                bottom: 0.6rem;
+                right: 1rem;
+                z-index: 3;
+                opacity: 0;
+                animation: zoomIn 1s 0.5s forwards;
+            }
+        }
+    }
+    .offer {
+       display: flex;
+       align-items: center;
+       gap: 16px;
+        &::before {
+                content: "";
+                width: 80px;
+                height: 14px;
+                background: url(../images/line-left.svg) no-repeat center center;
+                display: inline-block;
+        }
+       &::after {
+        content: "";
+        width: 80px;
+        height: 14px;
+        background: url(../images/line-right.svg) no-repeat center center;
+        display: inline-block;
+        }
+        p {
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        } 
+     }
+   }
+
+}
+
+.s-offer {
+    width: 100%;
+    height: 20rem;
+    background: url(../images/bg-login.png) no-repeat left center;
+    padding-top: 4.7rem;
+    padding-bottom: 3.2rem;
+    display: flex;
+    align-items: flex-end;
+    .container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4.1rem;
+        flex: 1;
+        max-width: 59.7rem;
+        h3 {
+            color: var(--white);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 3.2rem;
+            font-weight: bold;
+            letter-spacing: -0.02506rem;
+            margin-bottom: 0.5rem;  
+        }
+        h2 {
+            color: var(--brown);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 4.2rem;
+            font-weight: bold;
+            letter-spacing: -0.0652rem;
+        }
+    }
+    button {
+        flex: 1;
+        border-radius: 12px;
+        background-color: var(--white);
+        margin-right: 0.3rem;
+        max-width: 52.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.9rem;
+        padding: 30px 0;
+        span {
+            color: #475993;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: -0.0301rem;  
+        }
+    }
+}
+
+.s-combos {
+    padding: 7rem 0;
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3.2rem;
+        & > .box {
+            width: 263px !important;
+            background-color: var(--yellow) !important;
+        }
+        .box {
+            border-radius: 1.2rem;
+            background-color: var(--bege);
+            width: 21.8rem;
+            height: 14.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 9px;
+            transition: all .3s ease;
+            h3 {
+                color: var(--white);
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 2.2rem;
+                font-weight: bold;
+                letter-spacing: -0.0301rem;
+                text-transform: uppercase; 
+            }
+        }
+        ul {
+            flex: 1;
+            max-width: 92.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.6rem;
+            li {
+                .box {
+                   &:hover {
+                     background-color: var(--brown);
+                     box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.60);
+                   } 
+                }
+            }
+        }
+    }
+    .area-slide {
+        position: relative;
+        margin-top: 6.2rem;
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 66px;
+            height: 66px;
+            background-color: var(--yellow);
+            z-index: 2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.swiper-button-disabled {
+                opacity: 0.8;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+            &.prev {
+               left: -33px; 
+            }
+            &.next {
+                right: -33px;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+        .slide-combos {
+            overflow: hidden;
+            .card-combo {
+               width: 100%;
+               height: 493px;
+               background-color: var(--bege);
+               border-radius: 0.6rem;
+               overflow: hidden;
+               &:hover {
+                .image {
+                    & > img {
+                        transform: scale(1.1);
+                    }
+                }
+               }
+               .image {
+                position: relative;
+                width: 100%;
+                height: 34rem;
+                overflow: hidden;
+                border-bottom: 0.3rem dotted var(--white);
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform .5s ease;
+                }
+                button {
+                    position: absolute;
+                    top: 2.5rem;
+                    right: 2.6rem;
+                    z-index: 2;
+                    width: 3.8rem;
+                    height: 3.8rem;
+                    background-color: var(--white);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+               }
+               .info {
+                padding: 3.6rem 4.4rem;
+                 strong {
+                    color: var(--brown);
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    letter-spacing: -0.0201rem;
+                    margin-bottom: 1.4rem;
+                    display: block;
+                 }
+                 h3 {
+                    color: var(--orange);
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 3.2rem;
+                    font-weight: bold;
+                    letter-spacing: 0.1477rem;
+                    text-transform: uppercase;
+                 }
+               }
+            }
+        }
+    }
+    .control {
+      display: flex;
+      align-items: center;  
+      justify-content: space-between;
+      margin-top: 4.7rem;
+      .swiper-pagination {
+        position: relative;
+        bottom: 0;
+        width: auto;
+        &-bullet {
+            background-color: var(--yellow);
+            opacity: 0.5;
+            transition: all .2s ease;
+            &-active {
+              opacity: 1;
+              background-color: var(--orange);
+              transform: scale(1.2);
+            }
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        &:hover {
+            span {
+                color: var(--orange);
+            }
+        }
+        span {
+            color: var(--yellow);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: -0.0176rem;
+            text-transform: uppercase;
+            transition: color .3s ease;
+        }
+      }
+
+    }
+    
+}
